@@ -17,7 +17,7 @@ add('shared_dirs', []);
 add('writable_dirs', []);
 
 // Hosts
-host('ftp.mozzarellapizzas.com.br')
+host('177.12.164.79:21')
     ->user('mozzarellapizzas')
     ->set('deploy_path', '/www/teste');  
     
