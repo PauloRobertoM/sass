@@ -44,7 +44,6 @@ task('deploy:git', function () {
 
 task('deploy', [
     'deploy:git',
-    'cleanup',
     'permissions:reset',
 
 ]);
