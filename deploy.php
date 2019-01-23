@@ -43,7 +43,10 @@ task('deploy:git', function () {
 // });
 
 task('deploy', [
-    'deploy:git',
+    'deploy:prepare',
+    'deploy:release',
+    'deploy:update_code',
+    'deploy:symlink',
     'cleanup',
-    'permissions:reset',
+    'success'
 ]);
