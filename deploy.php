@@ -19,6 +19,8 @@ add('writable_dirs', []);
 // Hosts
 host('69.163.238.75')
     ->user('dh_p3kbez')
+    ->forwardAgent()
+    ->multiplexing()
     ->set('deploy_path', '/home/dh_p3kbez/soulphia2.dreamhosters.com');  
     
 // Tasks
