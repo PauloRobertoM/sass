@@ -1,0 +1,83 @@
+/** Footer **/
+footer {
+    display: block;
+    position: relative;
+    &::after {
+        content: "";
+        background: url(../imagens/fundo-rodape.png);
+        opacity: .02;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;
+    }
+    &::before {
+        content: "";
+        background: #1e2c35;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;
+    }
+    .container {
+        padding-top: 3em;
+        height: 6.5em;
+        position: relative;
+        img {
+            width: 250px;
+        }
+    }
+    a {
+        color: #fff;
+        text-decoration: none;
+    }
+}
+.menu-rodape,
+.social {
+    position: absolute;
+}
+.menu-rodape {
+    top: 1em;
+    right: 0;
+    ul li {
+        display: inline-block;
+        margin-left: 2em;
+    }
+}
+.social {
+    bottom: 0;
+    right: 0;
+    li {
+        float: left;
+        a {
+            display: block;
+            width: 55px;
+            height: 55px;
+            text-indent: -9999px;
+            overflow: hidden;
+            background-repeat: no-repeat;
+            margin-left: 1em;
+        }
+    }
+    a {
+        background-position: top;
+        background-size: 50px 50px;
+        &[href*="facebook"] {
+            background-image: url(../imagens/facebook.png);
+        }
+        &[href*="twitter"] {
+            background-image: url(../imagens/twitter.png);
+        }
+        &[href*="instagram"] {
+            background-image: url(../imagens/instagram.png);
+        }
+    }
+}
+.menu-rodape li,
+.social li {
+    display: inline;
+}

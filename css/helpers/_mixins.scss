@@ -1,0 +1,14 @@
+@mixin border-radius($border-radius: 0.3em) {
+    -webkit-border-radius: $border-radius;
+    -moz-border-radius: $border-radius;
+    -ms-border-radius: $border-radius;
+    -o-border-radius: $border-radius;
+    border-radius: $border-radius;
+}
+@mixin borda-padrao {
+    -webkit-box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
+    -ms-box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
+    -o-box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
+}
