@@ -23,13 +23,14 @@ add('writable_dirs', []);
 // Hosts
 
 host('69.163.238.75')
-    ->user('dh_p3kbez')
-    ->set('deploy_path', '/home/dh_p3kbez/soulphia.com/teste');   
+    ->user('xmaxteste')
+    ->forwardAgent()
+    ->set('deploy_path', '/home/xmaxteste/soulphiax.dreamhosters.com');
     
 // Tasks
 
 task('build', function () {
-    run('cd {{release_path}} && build');
+    run('cd {{deploy_path}} && build');
 });
 
 // [Optional] if deploy fails automatically unlock.
