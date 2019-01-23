@@ -19,9 +19,7 @@ add('shared_dirs', []);
 // Writable dirs by web server 
 add('writable_dirs', []);
 
-
 // Hosts
-
 host('69.163.238.75')
     ->user('xmaxteste')
     ->forwardAgent()
