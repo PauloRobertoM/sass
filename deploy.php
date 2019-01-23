@@ -1,7 +1,7 @@
 <?php
 namespace Deployer;
 
-// require 'recipe/laravel.php';
+require 'recipe/symfony.php';
 
 // Project name
 set('application', 'Sass');
@@ -17,9 +17,9 @@ add('shared_dirs', []);
 add('writable_dirs', []);
 
 // Hosts
-host('177.12.164.79:21')
-    ->user('mozzarellapizzas')
-    ->set('deploy_path', '/www/teste');  
+host('69.163.238.75')
+    ->user('dh_p3kbez')
+    ->set('deploy_path', '/home/dh_p3kbez/soulphia2.dreamhosters.com');  
     
 // Tasks
 task('permissions:reset', function () {
@@ -44,6 +44,6 @@ task('deploy:git', function () {
 
 task('deploy', [
     'deploy:git',
+    'cleanup',
     'permissions:reset',
-
 ]);
