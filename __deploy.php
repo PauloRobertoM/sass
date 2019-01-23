@@ -24,7 +24,8 @@ add('writable_dirs', []);
 
 host('69.163.238.75')
     ->user('dh_p3kbez')
-    ->set('deploy_path', '/home/dh_p3kbez/soulphia.com/teste');   
+    ->set('deploy_path', '/home/dh_p3kbez/soulphia2.dreamhosters.com');
+);
     
 // Tasks
 
